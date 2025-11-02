@@ -1,4 +1,4 @@
-# USharp
+# U#
 ## Not to be confused with USharp (a plugin for C#)
 Usharp is a programming language designed to mimic C# and its other derivatives. Unlike them, it's written in Python, making it significantly slower. 
 Its downsides are that it was initially designed to be esoteric and doesn't offer anything special or particularly useful, but it does have commands for interacting with the shell or Python itself (which are useless anyway). 
