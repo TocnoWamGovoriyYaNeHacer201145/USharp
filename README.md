@@ -11,17 +11,18 @@ But okay, let's get down to demonstrating the full syntax; it's quite simple, an
 
 ```
 using System;
-# Please, place ; in the end of line, or it give error
-# P.S. using, namespace, public, static and dynamic void does nothing, but it just exists.
+// Please, place ; in the end of line, or it give error
+// P.S. using, namespace, public, static and dynamic void does nothing, but it just exists.
+Console.WriteLine("Hello, world! _1");
 namespace nothing;
-static void Main(string[], args)
-printu("Hello, world!)
+static void Main(string[], args);
+printu("Hello, world! _2");
 I_AM_XD;
 random_number;
 random_symbols;
 wait(5);
-pycommand(print("Hello, world!"));
-terminal_command(sudo apt update)
+pycommand(print("Hello, world! _3"));
+terminal_command(echo "Hi");
 ```
 
 And that's all the syntax, I'll add more commands as I develop it, but don't expect much...
