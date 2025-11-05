@@ -40,6 +40,9 @@ def MainInterpreter(command):
     elif 'Console.WriteLine(' in command and command.startswith('Console.WriteLine(') and command.endswith(');'):
         argument = command[command.find('(') + 1:command.find(')')]
         Console.WriteLine(argument[1:-1])
+    elif 'Console.Write(' in command and command.startswith('Console.Write(') and command.endswith(');'):
+        argument = command[command.find('(') + 1:command.find(')')]
+        Console.Write(argument[1:-1])
     elif command.startswith('//'):
         pass
     else:
