@@ -34,7 +34,7 @@ And that's all the syntax, I'll add more commands as I develop it, but don't exp
 <your python version> <interpreter file path> <.usharp file path>
 ```
 # Contribution
-Feel free to make a pull request or suggest changes, I don't bite.
+Feel free to make a pull request or suggest changes.
 
 # License
 USharp is licensed under the MIT License.
