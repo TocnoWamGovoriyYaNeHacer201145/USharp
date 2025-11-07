@@ -2,6 +2,7 @@ import random
 import time
 import subprocess
 import sys
+import os
 
 symbols=['A','a','B','b','C','c','D','d','E','e','F','f','G','g','H','h','I','i','J','j','K','k','L','l','M','m','N','n','O','o','P','p','Q','q','R','r','S','s','T','t','U','u','V','v','W','w','X','x','Y','y','Z','z','0','1','2','3','4','5','6','7','8','9']
 
@@ -45,6 +46,30 @@ def MainInterpreter(command):
         Console.Write(argument[1:-1])
     elif command.startswith('//'):
         pass
+    elif 'CreateFile(' in command and command.startswith('CreateFile(') and command.endswith(');'):
+        if os.path.exists(command[12:-3]) == True:
+            print(f'Failed to create file {command[12:-3]}, file already exists')
+        else:
+            try:
+                open(command[12:-3], 'w')
+            except OSError:
+                print(f'Failed to delete file {command[12:-3]}\nError: {Exception}')
+    elif 'ClearFile(' in command and command.startswith('ClearFile(') and command.endswith(');'):
+        if os.path.exists(command[11:-3]) == True:
+            try:
+                open(command[11:-3], 'w')
+            except OSError:
+                print(f'Failed to delete file {command[11:-3]}\nError: {Exception}')
+        else:
+            print(f'File {command[11:-3]} does not exists')
+    elif 'DeleteFile(' in command and command.startswith('DeleteFile(') and command.endswith(');'):
+        if os.path.exists(command[12:-3]):
+            try:
+                os.remove(command[12:-3])
+            except OSError:
+                print(f'Failed to delete file {command[12:-3]}\nError: {Exception}')
+        else:
+            print(f'File {command[12:-3]} does not exists')
     else:
         print(f"I don't understand {command}")
 
