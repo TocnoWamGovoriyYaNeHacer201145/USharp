@@ -24,6 +24,10 @@ random_symbols;
 wait(5);
 pycommand(print("Hello, world! _3"));
 terminal_command(echo "Hi");
+// CreateFile("Test.txt");
+// ClearFile() cleans file content
+// ClearFile("Test.txt");
+// DeleteFile("Test.txt");
 ```
 
 And that's all the syntax, I'll add more commands as I develop it, but don't expect much...
