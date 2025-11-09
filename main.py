@@ -53,7 +53,7 @@ def MainInterpreter(command):
             try:
                 open(command[12:-3], 'w')
             except OSError:
-                print(f'Failed to delete file {command[12:-3]}\nError: {Exception}')
+                print(f'Failed to create file {command[12:-3]}\nError: {Exception}')
     elif 'ClearFile(' in command and command.startswith('ClearFile(') and command.endswith(');'):
         if os.path.exists(command[11:-3]) == True:
             try:
