@@ -4,17 +4,20 @@ import subprocess
 import sys
 import os
 
+# Symbols list and variables dict
 symbols=['A','a','B','b','C','c','D','d','E','e','F','f','G','g','H','h','I','i','J','j','K','k','L','l','M','m','N','n','O','o','P','p','Q','q','R','r','S','s','T','t','U','u','V','v','W','w','X','x','Y','y','Z','z','0','1','2','3','4','5','6','7','8','9']
 variables={}
 
+# Console Object, that used in CreateFile, ClearFile, DeleteFile
 class ConsoleObj():
     def __init__(self): pass
     def Write(self, text): print(text, end='')
-    def WriteLine(self, text="C##"):
-        if text != 'C##': print(text)
+    def WriteLine(self, text=None):
+        if text != None: print(text)
         else: print()
 Console = ConsoleObj()
 
+# Main Interpreter, processes argument with many if, elif
 def MainInterpreter(command):
     if command.startswith('I_AM_XD') and command.endswith(';'):
         print("I am XD too")
@@ -37,17 +40,17 @@ def MainInterpreter(command):
         subprocess.run(command[17:-2], shell=True)
     elif command.startswith(('public', 'static', 'dynamic', 'void', 'namespace')):
         pass
-    elif 'using' in command and command.startswith('using') and command.endswith(';'):
+    elif command.startswith('using') and command.endswith(';'):
         print(f'Imported module {command[6:-1]}')
-    elif 'Console.WriteLine(' in command and command.startswith('Console.WriteLine(') and command.endswith(');'):
+    elif command.startswith('Console.WriteLine(') and command.endswith(');'):
         argument = command[command.find('(') + 1:command.find(')')]
         Console.WriteLine(argument[1:-1])
-    elif 'Console.Write(' in command and command.startswith('Console.Write(') and command.endswith(');'):
+    elif command.startswith('Console.Write(') and command.endswith(');'):
         argument = command[command.find('(') + 1:command.find(')')]
         Console.Write(argument[1:-1])
     elif command.startswith('//'):
         pass
-    elif 'CreateFile(' in command and command.startswith('CreateFile(') and command.endswith(');'):
+    elif command.startswith('CreateFile(') and command.endswith(');'):
         if os.path.exists(command[12:-3]) == True:
             print(f'Failed to create file {command[12:-3]}, file already exists')
         else:
@@ -55,7 +58,7 @@ def MainInterpreter(command):
                 open(command[12:-3], 'w')
             except OSError:
                 print(f'Failed to create file {command[12:-3]}\nError: {Exception}')
-    elif 'ClearFile(' in command and command.startswith('ClearFile(') and command.endswith(');'):
+    elif command.startswith('ClearFile(') and command.endswith(');'):
         if os.path.exists(command[11:-3]) == True:
             try:
                 open(command[11:-3], 'w')
@@ -63,7 +66,7 @@ def MainInterpreter(command):
                 print(f'Failed to delete file {command[11:-3]}\nError: {Exception}')
         else:
             print(f'File {command[11:-3]} does not exists')
-    elif 'DeleteFile(' in command and command.startswith('DeleteFile(') and command.endswith(');'):
+    elif command.startswith('DeleteFile(') and command.endswith(');'):
         if os.path.exists(command[12:-3]):
             try:
                 os.remove(command[12:-3])
@@ -71,17 +74,21 @@ def MainInterpreter(command):
                 print(f'Failed to delete file {command[12:-3]}\nError: {Exception}')
         else:
             print(f'File {command[12:-3]} does not exists')
-    elif '=' in command:
-        newvar=command.split('=')
+    elif '=' in command and command.endswith(';'):
+        newvar=command[:-1].split('=')
         if ' ' in newvar[0]:
             newvar[0]=newvar[0].replace(' ', '')
             if ' ' in newvar[1]:
-                if [1,2,3,4,5,6,7,8,9] in newvar: int(newvar[1])
+                if ['1','2','3','4','5','6','7','8','9'] in newvar and not symbols in newvar: 
+                    int(newvar[1])
                 newvar[1]=newvar[1].replace(' ', '')
         variables[newvar[0]] = newvar[1]
+    elif command.startswith('GetType(') and command.endswith(');'):
+        print(type(command[8:-2])) 
     else:
         print(f"I don't understand {command}")
 
+# Function, that processes lines of a file and gives them as argument to MainInterpreter
 def ProcessFile(filepath):
     with open(filepath, 'r') as file:
         for line in file:
