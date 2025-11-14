@@ -5,6 +5,7 @@ import sys
 import os
 
 symbols=['A','a','B','b','C','c','D','d','E','e','F','f','G','g','H','h','I','i','J','j','K','k','L','l','M','m','N','n','O','o','P','p','Q','q','R','r','S','s','T','t','U','u','V','v','W','w','X','x','Y','y','Z','z','0','1','2','3','4','5','6','7','8','9']
+variables={}
 
 class ConsoleObj():
     def __init__(self): pass
@@ -70,6 +71,14 @@ def MainInterpreter(command):
                 print(f'Failed to delete file {command[12:-3]}\nError: {Exception}')
         else:
             print(f'File {command[12:-3]} does not exists')
+    elif '=' in command:
+        newvar=command.split('=')
+        if ' ' in newvar[0]:
+            newvar[0]=newvar[0].replace(' ', '')
+            if ' ' in newvar[1]:
+                if [1,2,3,4,5,6,7,8,9] in newvar: int(newvar[1])
+                newvar[1]=newvar[1].replace(' ', '')
+        variables[newvar[0]] = newvar[1]
     else:
         print(f"I don't understand {command}")
 
