@@ -8,15 +8,6 @@ import os
 symbols=['A','a','B','b','C','c','D','d','E','e','F','f','G','g','H','h','I','i','J','j','K','k','L','l','M','m','N','n','O','o','P','p','Q','q','R','r','S','s','T','t','U','u','V','v','W','w','X','x','Y','y','Z','z','0','1','2','3','4','5','6','7','8','9']
 variables={}
 
-# Console Object, that used in CreateFile, ClearFile, DeleteFile
-class ConsoleObj():
-    def __init__(self): pass
-    def Write(self, text): print(text, end='')
-    def WriteLine(self, text=None):
-        if text != None: print(text)
-        else: print()
-Console = ConsoleObj()
-
 # Main Interpreter, processes argument with many if, elif
 def MainInterpreter(command):
     if command.startswith('I_AM_XD') and command.endswith(';'):
@@ -44,10 +35,11 @@ def MainInterpreter(command):
         print(f'Imported module {command[6:-1]}')
     elif command.startswith('Console.WriteLine(') and command.endswith(');'):
         argument = command[command.find('(') + 1:command.find(')')]
-        Console.WriteLine(argument[1:-1])
+        if argument != None: print(argument)
+        else: print()
     elif command.startswith('Console.Write(') and command.endswith(');'):
         argument = command[command.find('(') + 1:command.find(')')]
-        Console.Write(argument[1:-1])
+        print(argument[1:-1], end='')
     elif command.startswith('//'):
         pass
     elif command.startswith('CreateFile(') and command.endswith(');'):
