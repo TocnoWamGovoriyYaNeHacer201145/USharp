@@ -29,7 +29,7 @@ def MainInterpreter(command):
         print(result)
     elif 'terminal_command' in command and command.startswith('terminal_command(') and command.endswith(');'):
         subprocess.run(command[17:-2], shell=True)
-    elif command.startswith(('public', 'static', 'dynamic', 'void', 'namespace')):
+    elif command.startswith(('public', 'static', 'dynamic', 'void', 'namespace', '//')):
         pass
     elif command.startswith('using') and command.endswith(';'):
         print(f'Imported module {command[6:-1]}')
@@ -40,8 +40,6 @@ def MainInterpreter(command):
     elif command.startswith('Console.Write(') and command.endswith(');'):
         argument = command[command.find('(') + 1:command.find(')')]
         print(argument[1:-1], end='')
-    elif command.startswith('//'):
-        pass
     elif command.startswith('CreateFile(') and command.endswith(');'):
         if os.path.exists(command[12:-3]) == True:
             print(f'Failed to create file {command[12:-3]}, file already exists')
