@@ -18,7 +18,7 @@ random_number
 random_symbols
 wait(2) // wait 2 seconds
 terminal_command('echo hi', shell=True) // hi!
-func Hello():
+void Hello():
   print('Hello from function!')
 Hello()
 ```
