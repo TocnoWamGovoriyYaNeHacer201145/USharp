@@ -6,8 +6,8 @@ symbols=['A','a','B','b','C','c','D','d','E','e','F','f','G','g','H','h','I','i'
 
 # Command dictionary
 command_dict = {
-    "I_AM_XD": "print('I_AM_XD')",
-    "func": "def",
+    "I_AM_XD": "print('I am XD too...')",
+    "void": "def",
     "printu": "print", 
     "Console.WriteLine": "print",
     "random_number": "print(random.randint(1, 9999999999))",
@@ -16,7 +16,8 @@ command_dict = {
     "terminal_command": "subprocess.run",
     "using": "import",
     "//": "#",
-    ";": ""
+    ";": "",
+    "public": "", "private": "", "static": "", "dynamic": ""
 }
 
 def command_parser(line):
