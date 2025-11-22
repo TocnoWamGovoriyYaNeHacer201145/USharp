@@ -7,6 +7,10 @@ symbols=['A','a','B','b','C','c','D','d','E','e','F','f','G','g','H','h','I','i'
 # Command dictionary
 command_dict = {
     "I_AM_XD": "print('I am XD too...')",
+    "int": "",
+    "string": "",
+    "bool": "",
+    "float": "",
     "void": "def",
     "printu": "print", 
     "Console.WriteLine": "print",
@@ -17,7 +21,9 @@ command_dict = {
     "using": "import",
     "//": "#",
     ";": "",
-    "public": "", "private": "", "static": "", "dynamic": ""
+    "public": "", "private": "", "static": "", "dynamic": "",
+    "++": "+= 1",
+    "--": "-= 1"
 }
 
 def command_parser(line):
@@ -25,7 +31,10 @@ def command_parser(line):
     for command in command_dict:
         if command in line:
             mod_line=mod_line.replace(command, command_dict[command])
-    exec(mod_line)
+    try:
+        exec(mod_line)
+    except:
+        print('Failed to execute file')
 
 if __name__ == '__main__':
     if len(sys.argv) != 2: 
