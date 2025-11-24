@@ -1,1 +1,2 @@
-*.py linguist-language=U#
+*.py linguist-language=Python
+*.usharp linguist-language="U#"
