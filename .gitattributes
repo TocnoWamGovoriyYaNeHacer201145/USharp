@@ -1,1 +1,2 @@
 *.usharp linguist-language=U#
+*.py linguist-language=C
