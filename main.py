@@ -2,6 +2,8 @@ import random
 import time
 import sys
 import subprocess
+import re
+
 symbols=['A','a','B','b','C','c','D','d','E','e','F','f','G','g','H','h','I','i','J','j','K','k','L','l','M','m','N','n','O','o','P','p','Q','q','R','r','S','s','T','t','U','u','V','v','W','w','X','x','Y','y','Z','z','0','1','2','3','4','5','6','7','8','9']
 
 # Command dictionary
@@ -29,12 +31,14 @@ command_dict = {
 def command_parser(line):
     mod_line = line
     for command in command_dict:
-        if command in line:
-            mod_line=mod_line.replace(command, command_dict[command])
+        if command and (command[0].isalnum() or command[0] == '_'):
+            pattern = r'\b' + re.escape(command) + r'\b'
+        else: pattern = re.escape(command) 
+        mod_line = re.sub(pattern, command_dict[command], mod_line)
     try:
         exec(mod_line)
-    except:
-        print('Failed to execute file')
+    except Exception as e:
+        print(f'Failed to execute file: {e}')
 
 if __name__ == '__main__':
     if len(sys.argv) != 2: 
