@@ -3,10 +3,10 @@ import time
 import subprocess
 import sys
 import os
-import builtins
 
 # Symbols list and variables dict
 symbols=['A','a','B','b','C','c','D','d','E','e','F','f','G','g','H','h','I','i','J','j','K','k','L','l','M','m','N','n','O','o','P','p','Q','q','R','r','S','s','T','t','U','u','V','v','W','w','X','x','Y','y','Z','z','0','1','2','3','4','5','6','7','8','9']
+variables = {}
 
 def return_var(arg):
     return getattr(builtins, str(arg), arg)
@@ -68,7 +68,7 @@ def MainInterpreter(command):
             print(f'File {command[12:-3]} does not exists')
     elif '=' in command and command.endswith(';'):
         newvar=command[:-1].split('=')
-        setattr(builtins, newvar[0], newvar[1])
+        variables[newvar[0]] = newvar[1]
     elif command.startswith('GetType(') and command.endswith(');'):
         print(type(command[8:-2])) 
     else:
